@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Projects = () => (
-  <div>
+  <div id="projects">
     <ul>
       <li>Relax.ly</li>
       <li>Adventure Tide</li>
