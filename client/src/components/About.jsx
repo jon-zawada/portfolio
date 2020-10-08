@@ -3,7 +3,9 @@ import React from 'react';
 const About = () => (
   <div id="about">
     <img src="/images/selfie.png" alt="" />
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam iste assumenda rem modi adipisci accusantium nemo nisi non? Incidunt quo in temporibus libero reprehenderit nobis at natus neque eos modi.</p>
+    <p>
+      A friend once jokingly told me if you can solve a rubik's cube you can be a software enginner. So out of curiosi
+    </p>
   </div>
 );
 
