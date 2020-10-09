@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import About from './About';
 import Projects from './Projects';
 import Header from './Header';
+import ProjectInfo from './ProjectInfo';
 
 class App extends React.Component {
   constructor() {
@@ -21,6 +22,7 @@ class App extends React.Component {
             <Route path="/" exact component={About} />
             <Route path="/about" component={About} />
             <Route path="/projects" exact component={Projects} />
+            <Route path="/projects/:id" component={ProjectInfo} />
           </Switch>
         </div>
       </Router>

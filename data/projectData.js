@@ -23,10 +23,10 @@ const data = {
       description: '',
       tech: [],
       bullets: [],
-      gif: '',
+      gif: '/images/tides.gif',
       icon: '/images/wave1.png',
       id: 3
-    }
+    },
   ]
 };
 
