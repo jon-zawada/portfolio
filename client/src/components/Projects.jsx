@@ -1,12 +1,12 @@
 import React from 'react';
+import ProjectDisplay from './ProjectDisplay';
+import { projects } from '../../../data/projectData';
 
 const Projects = () => (
   <div id="projects">
-    <ul>
-      <li>Relax.ly</li>
-      <li>Adventure Tide</li>
-      <li>Nimbus</li>
-    </ul>
+    {projects.map((project) => (
+      <ProjectDisplay project={project} key={project.id} />
+    ))}
   </div>
 );
 
