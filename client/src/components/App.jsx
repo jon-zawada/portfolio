@@ -20,9 +20,10 @@ class App extends React.Component {
           <Header />
           <Switch>
             <Route path="/" exact component={About} />
+            {/* redirct */}
             <Route path="/about" component={About} />
             <Route path="/projects" exact component={Projects} />
-            <Route path="/projects/:id" component={ProjectInfo} />
+            <Route path="/:id" component={ProjectInfo} />
           </Switch>
         </div>
       </Router>
