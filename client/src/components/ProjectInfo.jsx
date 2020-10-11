@@ -3,17 +3,7 @@ import { render } from 'react-dom';
 import data, { projects } from '../../../data/projectData';
 
 const ProjectInfo = ({ match }) => {
-  // const fetchProject = (id) => {
-  //   for (let i = 0; i < projects.length; i++) {
-  //     if (projects[i].id === Number(id)) {
-  //       return projects[i];
-  //     }
-  //   }
-  //   return null;
-  // };
-  // // const project = fetchProject(match.params.id);
   const project = data[match.params.id];
-  console.log(project);
   return (
     <div className="project-info-wrapper">
       <div className="project-info">

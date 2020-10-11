@@ -125,7 +125,6 @@ img {
 }
 
 .project-info-wrapper {
-  border: 5px solid purple;
   position: relative;
   left: 25%;
   width: 70%;
@@ -135,18 +134,15 @@ img {
 .project-info {
   display: flex;
   justify-content: space-around;
-  border: 5px solid pink
 }
 
 .img-info {
-  border: 5px solid red;
   width: 400px;
   height: 300px;
   margin-right: 15px;
 }
 
 .text-info {
-  border: 5px solid blue;
   text-align: center;
 }
 
@@ -155,7 +151,6 @@ img {
 }
 
 .list-wrapper {
-  border: 5px dotted tomato;
   margin: auto;
 }
 
