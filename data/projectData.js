@@ -8,11 +8,11 @@ const data = {
       'Architected SQL schema to maintain data normalization for individual reservation locations.',
       'Created RESTful API routes with Express to ensure simple yet effective communication between front and back end.'
     ],
-    gif: '',
+    gif: '/images/relaxly.gif',
     icon: '/images/relaxly.png',
     id: 1,
     github: 'https://github.com/jon-zawada/reservation-services',
-    youtube: ''
+    youtube: 'https://www.youtube.com/watch?v=NkV8bl5Z5pU&feature=youtu.be&ab_channel=JonathanZawada'
   },
   2: {
     name: 'Nimbus',
@@ -55,11 +55,11 @@ const data = {
         'Architected SQL schema to maintain data normalization for individual reservation locations.',
         'Created RESTful API routes with Express to ensure simple yet effective communication between front and back end.'
       ],
-      gif: '',
+      gif: '/images/relaxly.gif',
       icon: '/images/relaxly.png',
       id: 1,
       github: 'https://github.com/jon-zawada/reservation-services',
-      youtube: ''
+      youtube: 'https://www.youtube.com/watch?v=NkV8bl5Z5pU&feature=youtu.be&ab_channel=JonathanZawada'
     },
     {
       name: 'Nimbus',

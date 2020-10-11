@@ -23,7 +23,7 @@ class App extends React.Component {
             {/* redirct */}
             <Route path="/about" component={About} />
             <Route path="/projects" exact component={Projects} />
-            <Route path="/:id" component={ProjectInfo} />
+            <Route path="/projects/:id" component={ProjectInfo} />
           </Switch>
         </div>
       </Router>
