@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server",
     "server-dev": "nodemon server",
-    "react-dev": "webpack -d --watch"
+    "react-dev": "webpack -d --watch",
+    "compile": "webpack -d"
   },
   "repository": {
     "type": "git",
