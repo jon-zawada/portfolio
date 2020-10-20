@@ -220,6 +220,7 @@ img {
   padding: 5px;
 }
 
+
 @media only screen and (min-width: 768px) {
   .header {
     margin: auto;
@@ -236,7 +237,7 @@ img {
   }
 
   #name {
-    font-size: 50px;
+    font-size: 40px;
     margin-bottom: 0;
   }
 
@@ -415,5 +416,11 @@ img {
   
   .bullets {
     padding: 5px;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  #name{
+    font-size: 50px;
   }
 }
