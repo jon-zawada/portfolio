@@ -8,7 +8,7 @@ const linkStyle = {
 
 const Header = () => (
   <div className="header">
-    <h1 id="name">Jonathan Zawada</h1>
+    <h1 id="name">Jon Zawada</h1>
     <h6 id="job-title">Full Stack Developer</h6>
     <hr />
     <MediaLinks />
