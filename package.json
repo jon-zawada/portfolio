@@ -7,7 +7,9 @@
     "start": "node server",
     "server-dev": "nodemon server",
     "react-dev": "webpack -d --watch",
-    "compile": "webpack -d"
+    "compile": "webpack -d",
+    "pm2": "pm2 start server",
+    "stop": "pm2 stop server"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "path": "^0.12.7",
+    "pm2": "^4.5.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0"

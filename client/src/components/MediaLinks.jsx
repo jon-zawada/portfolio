@@ -1,7 +1,7 @@
 import React from 'react';
 
 const MediaLinks = () => (
-  <div>
+  <div className="icon-wrapper">
     <a href="https://github.com/jon-zawada" target="_blank" rel="noreferrer">
       <img src="/images/github.svg" alt="" className="filter-white" />
     </a>
