@@ -22,7 +22,7 @@ body {
   text-align: center;
   background: #1abc9c;
   color: white;
-  font-size: 15px;
+  font-size: 18px;
   width: 100%;
   height: auto;
   position: fixed;
@@ -44,6 +44,7 @@ hr{
 }
 
 .icon-wrapper {
+  display: none;
   margin: 0;
   padding: 0;
 }
@@ -65,10 +66,19 @@ hr{
   width: 150px;
 }
 
+li.chosen-nav {
+  color: #1abc9c;
+  background-color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 0px 3px 0px;
+}
+
 li.nav {
   color: white;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 li.nav:hover {
@@ -81,7 +91,7 @@ img {
 }
 
 #about {
-  padding: 150px 0px 0px;
+  padding: 125px 0px 0px;
   width: 90%;
   margin: auto;
 }
@@ -115,7 +125,7 @@ img {
   display: grid;
   grid-template-columns: 1fr;
   position: relative;
-  padding: 140px 0px 0px;
+  padding: 125px 0px 0px;
   padding-bottom: 25px;
   margin-bottom: 50px;
   width: 90%;
@@ -248,11 +258,25 @@ img {
     width: inherit;
   }
 
+  .icon-wrapper {
+    display: inherit;
+    margin: 0;
+    padding: 0;
+  }
+
   #routes {
     list-style-type: none;
     padding: 0px;
     margin-top: 5px;
     display: inherit;
+  }
+
+  li.chosen-nav {
+    color: #1abc9c;
+    background-color: white;
+    text-decoration: none;
+    font-size: inherit;
+    border-radius: 8px;
   }
 
   li.nav {
