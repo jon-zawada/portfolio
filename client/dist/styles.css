@@ -40,6 +40,8 @@ body {
 
 hr{
   border: 1px solid white;
+  border-radius: 8px;
+  background-color: white;
   width: 90%;
 }
 
@@ -187,9 +189,6 @@ img {
   padding: 140px 0px 0px;
 }
 
-.project-info {
-}
-
 .img-info {
   width: 100%;
   height: 100%;
@@ -223,9 +222,6 @@ img {
   margin-top: 20px;
 }
 
-.bullet-list {
-}
-
 .bullets {
   padding: 5px;
 }
@@ -233,65 +229,51 @@ img {
 
 @media only screen and (min-width: 768px) {
   .header {
-    margin: auto;
+    /* margin: auto; */
     padding: 10px;
-    text-align: center;
+    /* text-align: center;
     background: #1abc9c;
-    color: white;
+    color: white; */
     font-size: 30px;
     top: 0;
     left: 0;
     width: 20%;
-    position: fixed;
+    /* position: fixed; */
     height: 100%;
   }
 
   #name {
     font-size: 40px;
-    margin-bottom: 0;
   }
 
   .filter-white {
-    filter: invert(100%) sepia(9%) saturate(1647%) hue-rotate(343deg) brightness(109%) contrast(109%);
+    /* filter: invert(100%) sepia(9%) saturate(1647%) hue-rotate(343deg) brightness(109%) contrast(109%);
     padding: 5px;
-    opacity: 0.8; 
+    opacity: 0.8;  */
     width: inherit;
   }
 
   .icon-wrapper {
     display: inherit;
-    margin: 0;
-    padding: 0;
   }
 
   #routes {
-    list-style-type: none;
-    padding: 0px;
+    /* list-style-type: none;
+    padding: 0px; */
     margin-top: 5px;
     display: inherit;
   }
 
   li.chosen-nav {
-    color: #1abc9c;
-    background-color: white;
-    text-decoration: none;
     font-size: inherit;
-    border-radius: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 
   li.nav {
-    color: white;
-    text-decoration: none;
     font-size: inherit;
-  }
-
-  li.nav:hover {
-    color: white;
-    text-decoration: underline white;
-  }
-  
-  img {
-    border-radius: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
   
   #about {
@@ -314,9 +296,7 @@ img {
   }
   
   #projects {
-    display: grid;
     grid-template-columns: 1fr 1fr;
-    position: relative;
     padding: inherit;
     left: 40%;
     width: 40%;
@@ -325,56 +305,7 @@ img {
     margin-bottom: 50px;
   }
   
-  .display-link {
-    color: black;
-    text-decoration: none; /* no underline */
-    margin: auto;
-    margin-top: 10px;
-    border: 5px solid #1abc9c;
-    background-color: rgba(26, 188, 156, 0.05);
-    border-radius: 80px;
-    padding: 50px;
-  }
-  
-  .display-link:hover {
-    background-color: rgba(26, 188, 156, 0.1);
-    cursor: pointer;
-  }
-  
-  .project-display-img {
-    width: 100px;
-    height: 100px;
-  }
-  
-  .project-display-text {
-    margin-top: 5px;
-    text-align: center;
-    width: 90%;
-    height: 17px;
-    font-size: 15px;
-  }
-  
-  .filter-main-color {
-    margin-top: 2px;
-    filter: invert(62%) sepia(24%) saturate(1499%) hue-rotate(119deg) brightness(94%) contrast(80%);
-    padding: 2px;
-    opacity: 0.8;
-    width: 25px;
-    height: 25px;
-  }
-  
-  .filter-white:hover {
-    opacity: 1; 
-    cursor: pointer;
-  }
-  
-  .filter-main-color:hover {
-    opacity: 1; 
-    cursor: pointer;
-  }
-  
   .project-info-wrapper {
-    position: relative;
     left: 30%;
     width: 70%;
     margin: inherit;
@@ -385,14 +316,12 @@ img {
   .project-info {
     display: flex;
     justify-content: space-between;
-    /* border: 5px solid red; */
   }
   
   .img-info {
     width: 400px;
     height: 300px;
     margin-right: 15px;
-    border: 2px solid black;
   }
   
   .text-info {
@@ -401,49 +330,29 @@ img {
     /* justify-content: center; */
     text-align: inherit;
     /* border: 5px solid pink; */
-    margin-top: 10px;
     padding-left: 30px;
   }
   
   .info-header {
-    color: #1abc9c;
-    /* border: 5px solid black; */
-    font-size: 2.5em;
-    margin: 0;
     margin-top: 50px;
     width: 70%;
   }
   
   .project-description {
-    margin: 0;
-    font-style: italic;
-    /* border: 5px solid green; */
     width: 70%;
   }
   
   .tech-used {
-    margin: 0;
-    /* border: 5px solid teal; */
     width: 60%;
   }
   
   .list-wrapper {
     margin: inherit;
-    margin-top: 20px;
     width: 80%;
-    /* border: 5px solid hotpink; */
-  }
-  
-  .bullet-list {
-  
-  }
-  
-  .bullets {
-    padding: 5px;
   }
 }
 
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 870px) {
   #name{
     font-size: 50px;
   }
