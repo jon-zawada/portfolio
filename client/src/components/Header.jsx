@@ -28,6 +28,4 @@ const Header = ({changeHover, hover}) => {
   );
 };
 
-
-
 export default Header;

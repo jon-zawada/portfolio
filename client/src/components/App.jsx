@@ -16,6 +16,7 @@ class App extends React.Component {
 
   changeHover(event) {
     const route = event.target.getAttribute('value');
+    console.log('route');
     this.setState({ hover: route });
   }
 
@@ -26,8 +27,8 @@ class App extends React.Component {
         <div>
           <Header changeHover={this.changeHover} hover={hover} />
           <Switch>
-            <Route path="/" exact component={About} />
-            <Route path="/about" component={About} />
+            <Route path="/" exact render={() => <About changeHover={this.changeHover} />} />
+            <Route path="/about" component={() => <About changeHover={this.changeHover} />} />
             <Route path="/projects" exact component={Projects} />
             <Route path="/projects/:id" component={ProjectInfo} />
           </Switch>
