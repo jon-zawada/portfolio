@@ -7,7 +7,7 @@
     "start": "node server",
     "server-dev": "nodemon server",
     "react-dev": "webpack -d --watch",
-    "compile": "webpack -d",
+    "compile": "webpack -d --mode production",
     "pm2": "pm2 start server",
     "stop": "pm2 stop server"
   },
