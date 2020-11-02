@@ -24,7 +24,7 @@ const data = {
       'Implemented an Nginx cache to improve query speeds by 90% (~300ms to ~29ms).',
       'Utilized New Relic and Loader.io to diagnose and determine server and database bottlenecks.'
     ],
-    gif: '',
+    gif: '/images/nimbus.gif',
     icon: '/images/headphones.svg',
     id: 2,
     github: 'https://github.com/jon-zawada/sidebar-service',
@@ -39,8 +39,8 @@ const data = {
       'Implemented smooth communication between multiple web APIs using Unirest to obtain realtime tide level data.',
       'Displayed tide level data per input location for an interactive and clean user experience through the use of React-Charts-2.'
     ],
-    gif: '/images/tides1.gif',
-    icon: '/images/wave1.png',
+    gif: '/images/tides.gif',
+    icon: '/images/wave.png',
     id: 3,
     github: 'https://github.com/jon-zawada/Adventure-Tide',
     youtube: 'https://www.youtube.com/watch?v=ImaL2I_i88k&feature=youtu.be&ab_channel=JonathanZawada'
@@ -71,7 +71,7 @@ const data = {
         'Implemented an Nginx cache to improve query speeds by 90% (~300ms to ~29ms).',
         'Utilized New Relic and Loader.io to diagnose and determine server and database bottlenecks.'
       ],
-      gif: '',
+      gif: '/images/nimbus.gif',
       icon: '/images/headphones.svg',
       id: 2,
       github: 'https://github.com/jon-zawada/sidebar-service',
@@ -86,8 +86,8 @@ const data = {
         'Implemented smooth communication between multiple web APIs using Unirest to obtain realtime tide level data.',
         'Displayed tide level data per input location for an interactive and clean user experience through the use of React-Charts-2.'
       ],
-      gif: '/images/tides1.gif',
-      icon: '/images/wave1.png',
+      gif: '/images/tides.gif',
+      icon: '/images/wave.png',
       id: 3,
       github: 'https://github.com/jon-zawada/Adventure-Tide',
       youtube: 'https://www.youtube.com/watch?v=ImaL2I_i88k&feature=youtu.be&ab_channel=JonathanZawada'
