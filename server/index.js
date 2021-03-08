@@ -14,7 +14,7 @@ const credentials = {
   ca: ''
 };
 
-app.use(express.static(path.join('client', 'dist')));
+app.use(express.static(path.join('client', 'dist'), { dotfiles: 'allow' }));
 
 app.get('*', (req, res) => {
   res.sendFile(path.resolve(DIST_DIR));
