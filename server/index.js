@@ -23,6 +23,13 @@ app.get('*', (req, res) => {
   res.sendFile(path.resolve(DIST_DIR));
 });
 
+app.use((req, res, next) => {
+  if (!req.secure) {
+    return res.redirect(['https://', req.get('Host'), req.url].join(''));
+  }
+  next();
+});
+
 const httpServer = http.createServer(app);
 const httpsServer = https.createServer(credentials, app);
 
