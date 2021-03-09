@@ -23,14 +23,7 @@ app.get('*', (req, res) => {
   res.sendFile(path.resolve(DIST_DIR));
 });
 
-const httpServer = http.createServer(app);
-const httpsServer = https.createServer(credentials, app);
-
-httpServer.listen(HTTP_PORT, () => {
-  console.log(`Portfolio listening on ${HTTP_PORT} ---> mapped to 80`);
-});
-
-httpServer.use((req, res, next) => {
+app.use((req, res, next) => {
   if (req.secure) {
     console.log('here');
     next();
@@ -38,6 +31,13 @@ httpServer.use((req, res, next) => {
     console.log(req.headers.host, req.url);
     res.redirect(`https://${req.headers.host}${req.url}`);
   }
+});
+
+const httpServer = http.createServer(app);
+const httpsServer = https.createServer(credentials, app);
+
+httpServer.listen(HTTP_PORT, () => {
+  console.log(`Portfolio listening on ${HTTP_PORT} ---> mapped to 80`);
 });
 
 httpsServer.listen(HTTPS_PORT, () => {
