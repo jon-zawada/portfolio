@@ -19,16 +19,6 @@ const credentials = {
 
 app.use(express.static(path.join('client', 'dist'), { dotfiles: 'allow' }));
 
-app.use((req, res, next) => {
-  if (req.secure) {
-    console.log('here');
-    next();
-  } else {
-    console.log(req.headers.host, req.url);
-    res.redirect(`https://${req.headers.host}${req.url}`);
-  }
-});
-
 app.get('*', (req, res) => {
   res.sendFile(path.resolve(DIST_DIR));
 });
@@ -38,6 +28,16 @@ const httpsServer = https.createServer(credentials, app);
 
 httpServer.listen(HTTP_PORT, () => {
   console.log(`Portfolio listening on ${HTTP_PORT} ---> mapped to 80`);
+});
+
+httpServer.use((req, res, next) => {
+  if (req.secure) {
+    console.log('here');
+    next();
+  } else {
+    console.log(req.headers.host, req.url);
+    res.redirect(`https://${req.headers.host}${req.url}`);
+  }
 });
 
 httpsServer.listen(HTTPS_PORT, () => {
