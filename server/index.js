@@ -17,20 +17,20 @@ const credentials = {
   ca: ca
 };
 
-app.use(express.static(path.join('client', 'dist'), { dotfiles: 'allow' }));
-
-app.get('*', (req, res) => {
-  res.sendFile(path.resolve(DIST_DIR));
-});
-
 app.use((req, res, next) => {
   if (req.secure) {
     console.log('here');
     next();
   } else {
     console.log(req.headers.host, req.url);
-    return res.redirect(`https://${req.headers.host}${req.url}`);
+    res.redirect(`https://${req.headers.host}${req.url}`);
   }
+});
+
+app.use(express.static(path.join('client', 'dist'), { dotfiles: 'allow' }));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve(DIST_DIR));
 });
 
 const httpServer = http.createServer(app);
