@@ -21,6 +21,7 @@ app.use(express.static(path.join('client', 'dist'), { dotfiles: 'allow' }));
 
 app.use((req, res, next) => {
   if (req.secure) {
+    console.log('here');
     next();
   } else {
     console.log(req.headers.host, req.url);
