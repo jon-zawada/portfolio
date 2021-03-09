@@ -19,8 +19,12 @@ const credentials = {
 
 app.use(express.static(path.join('client', 'dist'), { dotfiles: 'allow' }));
 
-app.get('*', (req, res) => {
-  res.redirect(`https://${req.headers.host}${req.url}`);
+app.use((req, res, next) => {
+  if (req.secure) {
+    next();
+  } else {
+    res.redirect(`https://${req.headers.host}${req.url}`);
+  }
 });
 
 app.get('*', (req, res) => {
